@@ -15,29 +15,31 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 transition-all duration-300 ${
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-black/80 backdrop-blur-md border-b border-zinc-800' : 'bg-transparent'
     }`}>
-      <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-        <div className="w-10 h-10 bg-white text-black rounded font-bold flex items-center justify-center">
-          CA
-        </div>
-        <div>
-          <div className="font-bold">Creative Agency</div>
-          <div className="text-sm text-zinc-400">Design the future</div>
-        </div>
-      </Link>
-      
-      <nav className="hidden md:flex space-x-8">
-        <Link href="/" className="hover:text-zinc-300">Home</Link>
-        <Link href="/services" className="hover:text-zinc-300">Services</Link>
-        <Link href="/portfolio" className="hover:text-zinc-300">Portfolio</Link>
-        <Link href="/about" className="hover:text-zinc-300">About</Link>
-      </nav>
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+          <div className="w-10 h-10 bg-white text-black rounded font-bold flex items-center justify-center">
+            CA
+          </div>
+          <div>
+            <div className="font-bold">Creative Agency</div>
+            <div className="text-sm text-zinc-400">Design the future</div>
+          </div>
+        </Link>
+        
+        <nav className="hidden md:flex space-x-8">
+          <Link href="/" className="hover:text-zinc-300">Home</Link>
+          <Link href="/services" className="hover:text-zinc-300">Services</Link>
+          <Link href="/portfolio" className="hover:text-zinc-300">Portfolio</Link>
+          <Link href="/about" className="hover:text-zinc-300">About</Link>
+        </nav>
 
-      <div className="flex space-x-2">
-        <button className="px-3 py-1 border border-zinc-600 rounded text-sm">ID</button>
-        <button className="px-3 py-1 bg-white text-black rounded text-sm">EN</button>
+        <div className="flex space-x-2">
+          <button className="px-3 py-1 border border-zinc-600 rounded text-sm">ID</button>
+          <button className="px-3 py-1 bg-white text-black rounded text-sm">EN</button>
+        </div>
       </div>
     </header>
   );
