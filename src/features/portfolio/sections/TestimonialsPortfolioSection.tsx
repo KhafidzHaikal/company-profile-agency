@@ -122,6 +122,7 @@ export default function TestimonialsPortfolioSection() {
                   width={64}
                   height={64}
                   className="w-16 h-16 rounded-full object-cover border-2 border-zinc-700"
+                  loading="lazy"
                 />
                 <div>
                   <h4 className="text-white font-semibold text-lg">
