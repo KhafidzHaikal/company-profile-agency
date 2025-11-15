@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function HeroSection() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -6,12 +8,12 @@ export default function HeroSection() {
         {/* Left Content */}
         <div className="w-full lg:w-1/2 space-y-6 sm:space-y-8 text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-            Create, design, <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">and</span><br />
-            <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">build</span> your brand
+            We craft <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">digital</span><br />
+            experiences that <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">inspire</span>
           </h1>
           
           <p className="text-base sm:text-lg lg:text-xl text-zinc-300 max-w-lg mx-auto lg:mx-0">
-            Transform your vision into reality with our creative expertise and strategic approach
+            Your premier creative agency for innovative web solutions, stunning designs, and powerful digital strategies that drive results
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -30,9 +32,11 @@ export default function HeroSection() {
           <div className="relative">
             {/* Main Image Container */}
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-500 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl">
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=400&fit=crop&crop=center" 
                 alt="Creative Team Working" 
+                width={400}
+                height={400}
                 className="w-full h-full object-cover rounded-2xl"
               />
             </div>

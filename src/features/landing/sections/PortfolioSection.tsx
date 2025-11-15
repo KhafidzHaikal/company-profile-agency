@@ -1,4 +1,5 @@
 import { FaCode, FaCog, FaRobot, FaMobile, FaDatabase, FaCloud } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function PortfolioSection() {
   const portfolioItems = [
@@ -74,9 +75,11 @@ export default function PortfolioSection() {
                 <div className="bg-zinc-900 rounded-2xl overflow-hidden hover:bg-zinc-800 transition-all duration-300 border border-zinc-800 hover:border-purple-400/30">
                   {/* Image Container */}
                   <div className="relative aspect-video overflow-hidden">
-                    <img 
+                    <Image 
                       src={item.image}
                       alt={item.title}
+                      width={600}
+                      height={400}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>

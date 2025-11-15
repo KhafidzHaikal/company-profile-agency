@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function IntroductionSection() {
   const services = [
     {
@@ -44,9 +46,11 @@ export default function IntroductionSection() {
             <div key={index} className="group h-full">
               <div className="bg-zinc-900 rounded-2xl overflow-hidden hover:bg-zinc-800 transition-all duration-300 h-full flex flex-col">
                 <div className="aspect-video overflow-hidden">
-                  <img 
+                  <Image 
                     src={service.image}
                     alt={service.alt}
+                    width={400}
+                    height={300}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
