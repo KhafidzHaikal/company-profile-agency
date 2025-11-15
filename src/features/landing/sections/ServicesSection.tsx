@@ -1,38 +1,16 @@
 import { FaCode, FaTools, FaTachometerAlt, FaShieldAlt, FaDatabase, FaPuzzlePiece } from 'react-icons/fa';
+import Link from 'next/link';
+import { services } from '@/data/services';
 
 export default function ServicesSection() {
-  const services = [
-    {
-      title: "Website Development",
-      description: "Custom websites built with modern technology",
-      icon: FaCode,
-    },
-    {
-      title: "Regular Maintenance", 
-      description: "Keep your site updated and running smoothly",
-      icon: FaTools,
-    },
-    {
-      title: "Speed Optimization",
-      description: "Fast loading times for better user experience",
-      icon: FaTachometerAlt,
-    },
-    {
-      title: "Website Security",
-      description: "Protect your site from threats and attacks",
-      icon: FaShieldAlt,
-    },
-    {
-      title: "Automatic Backup",
-      description: "Daily backups to keep your data safe",
-      icon: FaDatabase,
-    },
-    {
-      title: "Plugin Integration",
-      description: "Seamless integration with essential tools",
-      icon: FaPuzzlePiece,
-    }
-  ];
+  const iconMap = {
+    'website-development': FaCode,
+    'regular-maintenance': FaTools,
+    'speed-optimization': FaTachometerAlt,
+    'website-security': FaShieldAlt,
+    'automatic-backup': FaDatabase,
+    'plugin-integration': FaPuzzlePiece,
+  };
 
   return (
     <section className="py-20 bg-zinc-900 relative overflow-hidden">
@@ -64,7 +42,7 @@ export default function ServicesSection() {
 
             {/* Service Items Positioned Around Cube */}
             {services.map((service, index) => {
-              const IconComponent = service.icon;
+              const IconComponent = iconMap[service.id as keyof typeof iconMap];
               const positions = [
                 "top-8 left-16",      // Website Development
                 "top-8 right-16",     // Regular Maintenance  
@@ -88,9 +66,15 @@ export default function ServicesSection() {
                         {service.title}
                       </span>
                     </div>
-                    <p className="text-zinc-400 text-sm leading-relaxed ml-13">
+                    <p className="text-zinc-400 text-sm leading-relaxed ml-13 mb-3">
                       {service.description}
                     </p>
+                    <Link 
+                      href={`/services/${service.id}`}
+                      className="text-purple-400 hover:text-purple-300 text-sm font-medium ml-13 inline-flex items-center transition-colors duration-300"
+                    >
+                      Learn More →
+                    </Link>
                   </div>
                 </div>
               );
@@ -114,7 +98,7 @@ export default function ServicesSection() {
           {/* Services Grid for Mobile */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {services.map((service, index) => {
-              const IconComponent = service.icon;
+              const IconComponent = iconMap[service.id as keyof typeof iconMap];
               return (
                 <div key={index} className="group cursor-pointer">
                   <div className="bg-zinc-800/90 backdrop-blur-md rounded-2xl px-6 py-5 border border-zinc-700/50 hover:border-purple-400/50 hover:bg-zinc-700/90 transition-all duration-300 shadow-lg">
@@ -126,9 +110,15 @@ export default function ServicesSection() {
                         {service.title}
                       </span>
                     </div>
-                    <p className="text-zinc-400 text-base leading-relaxed">
+                    <p className="text-zinc-400 text-base leading-relaxed mb-4">
                       {service.description}
                     </p>
+                    <Link 
+                      href={`/services/${service.id}`}
+                      className="text-purple-400 hover:text-purple-300 font-medium inline-flex items-center transition-colors duration-300"
+                    >
+                      Learn More →
+                    </Link>
                   </div>
                 </div>
               );

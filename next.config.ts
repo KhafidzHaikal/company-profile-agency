@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: false,
   },
+  images: {
+    domains: ['images.unsplash.com'],
+  },
   headers: async () => [
     {
       source: '/(.*)',
