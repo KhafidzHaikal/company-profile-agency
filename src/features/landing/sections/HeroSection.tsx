@@ -1,6 +1,11 @@
+'use client';
+
 import Image from 'next/image';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function HeroSection() {
+  const { t } = useLanguage();
+  
   return (
     <div className="min-h-screen flex flex-col">
       {/* Main Content */}
@@ -8,20 +13,19 @@ export default function HeroSection() {
         {/* Left Content */}
         <div className="w-full lg:w-1/2 space-y-6 sm:space-y-8 text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-            We craft <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">digital</span><br />
-            experiences that <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">inspire</span>
+            {t('hero.title')}
           </h1>
           
           <p className="text-base sm:text-lg lg:text-xl text-zinc-300 max-w-lg mx-auto lg:mx-0">
-            Your premier creative agency for innovative web solutions, stunning designs, and powerful digital strategies that drive results
+            {t('hero.subtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-              Start your project
+              {t('hero.cta')}
             </button>
             <button className="text-white hover:text-zinc-300 flex items-center justify-center space-x-2 px-6 py-3 sm:py-4 border border-zinc-600 rounded-full hover:border-white transition-all duration-300">
-              <span>Learn more</span>
+              <span>{t('hero.consultation')}</span>
               <span>→</span>
             </button>
           </div>
@@ -38,6 +42,9 @@ export default function HeroSection() {
                 width={400}
                 height={400}
                 className="w-full h-full object-cover rounded-2xl"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
             </div>
             

@@ -4,6 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import AboutUsSection from './sections/AboutUsSection';
 import GallerySection from './sections/GallerySection';
+import ScrollToTop from '@/components/ui/ScrollToTop';
 
 export default function AboutPage() {
   return (
@@ -13,6 +14,7 @@ export default function AboutPage() {
         <AboutUsSection />
         <GallerySection />
       </div>
+      <ScrollToTop />
       <Footer />
     </>
   );

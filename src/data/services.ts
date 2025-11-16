@@ -8,38 +8,38 @@ export interface Service {
 export const services: Service[] = [
   {
     id: 'website-development',
-    title: "Website Development",
-    description: "Custom websites built with modern technology",
+    title: "Website & App Development",
+    description: "Build websites and applications from scratch using modern tools",
     icon: null, // Will be set in component
   },
   {
     id: 'regular-maintenance',
-    title: "Regular Maintenance", 
-    description: "Keep your site updated and running smoothly",
+    title: "Maintenance & Updates", 
+    description: "Regular updates, backups, and system maintenance",
     icon: null,
   },
   {
     id: 'speed-optimization',
-    title: "Speed Optimization",
-    description: "Fast loading times for better user experience",
+    title: "SEO Optimization",
+    description: "Improve search engine visibility and performance",
     icon: null,
   },
   {
     id: 'website-security',
-    title: "Website Security",
-    description: "Protect your site from threats and attacks",
+    title: "Platform Migration",
+    description: "Migrate websites to newer, better systems",
     icon: null,
   },
   {
     id: 'automatic-backup',
-    title: "Automatic Backup",
-    description: "Daily backups to keep your data safe",
+    title: "UI/UX Design",
+    description: "User-friendly application design and prototyping",
     icon: null,
   },
   {
     id: 'plugin-integration',
-    title: "Plugin Integration",
-    description: "Seamless integration with essential tools",
+    title: "Modern Methodology",
+    description: "Agile, Scrum, and Design Thinking approaches",
     icon: null,
   }
 ];

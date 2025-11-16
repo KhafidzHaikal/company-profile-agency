@@ -4,9 +4,11 @@ import { useState } from 'react';
 import { FaChevronLeft, FaChevronRight, FaStar, FaQuoteLeft } from 'react-icons/fa';
 import Image from 'next/image';
 import { portfolioTestimonials } from '@/data/testimonials';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function TestimonialsPortfolioSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { t } = useLanguage();
 
 
 
@@ -29,10 +31,10 @@ export default function TestimonialsPortfolioSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Client <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Success Stories</span>
+            {t('portfolioPage.clientSuccessStories')}
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our clients say about the results we've delivered together.
+            {t('portfolioPage.clientTestimonialDescription')}
           </p>
         </div>
 
@@ -41,10 +43,10 @@ export default function TestimonialsPortfolioSection() {
           <div>
             <div className="mb-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Proven Results That <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Speak Volumes</span>
+                {t('portfolioPage.provenResults')}
               </h3>
               <p className="text-zinc-300 leading-relaxed">
-                Our portfolio showcases measurable success across various industries. Each project represents a partnership that delivered exceptional ROI and business growth.
+                {t('portfolioPage.portfolioShowcase')}
               </p>
             </div>
 
@@ -52,19 +54,19 @@ export default function TestimonialsPortfolioSection() {
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-800">
                 <div className="text-2xl font-bold text-lime-400 mb-2">$2M+</div>
-                <div className="text-zinc-400 text-sm">Revenue Generated</div>
+                <div className="text-zinc-400 text-sm">{t('portfolioPage.metrics.revenueGenerated')}</div>
               </div>
               <div className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-800">
                 <div className="text-2xl font-bold text-purple-400 mb-2">98%</div>
-                <div className="text-zinc-400 text-sm">Client Satisfaction</div>
+                <div className="text-zinc-400 text-sm">{t('portfolioPage.metrics.clientSatisfaction')}</div>
               </div>
               <div className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-800">
                 <div className="text-2xl font-bold text-cyan-400 mb-2">150%</div>
-                <div className="text-zinc-400 text-sm">Avg. ROI Increase</div>
+                <div className="text-zinc-400 text-sm">{t('portfolioPage.metrics.avgROI')}</div>
               </div>
               <div className="bg-zinc-900/50 rounded-xl p-6 border border-zinc-800">
                 <div className="text-2xl font-bold text-lime-400 mb-2">24/7</div>
-                <div className="text-zinc-400 text-sm">Support Available</div>
+                <div className="text-zinc-400 text-sm">{t('portfolioPage.metrics.supportAvailable')}</div>
               </div>
             </div>
             
@@ -110,7 +112,7 @@ export default function TestimonialsPortfolioSection() {
 
               {/* Results Badge */}
               <div className="bg-lime-400/10 border border-lime-400/20 rounded-xl p-4 mb-6">
-                <div className="text-lime-400 font-semibold text-sm mb-1">Project Results:</div>
+                <div className="text-lime-400 font-semibold text-sm mb-1">{t('portfolioPage.projectResults')}:</div>
                 <div className="text-white font-medium">{portfolioTestimonials[currentIndex].results}</div>
               </div>
 
@@ -122,6 +124,7 @@ export default function TestimonialsPortfolioSection() {
                   width={64}
                   height={64}
                   className="w-16 h-16 rounded-full object-cover border-2 border-zinc-700"
+                  loading="lazy"
                 />
                 <div>
                   <h4 className="text-white font-semibold text-lg">
@@ -158,17 +161,17 @@ export default function TestimonialsPortfolioSection() {
         <div className="text-center mt-20">
           <div className="max-w-3xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Join Our Success Stories?
+              {t('portfolioPage.readyToJoin')}
             </h3>
             <p className="text-zinc-300 mb-8">
-              Let's create measurable results for your business. Schedule a consultation to discuss your project goals.
+              {t('portfolioPage.createMeasurableResults')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                Get Free Consultation
+                {t('portfolioPage.getFreeConsultation')}
               </button>
               <button className="text-white hover:text-zinc-300 flex items-center justify-center space-x-2 px-8 py-4 border border-zinc-600 rounded-full hover:border-white transition-all duration-300">
-                <span>View All Case Studies</span>
+                <span>{t('portfolioPage.viewAllCaseStudies')}</span>
                 <span>→</span>
               </button>
             </div>

@@ -5,17 +5,33 @@ import { FaExternalLinkAlt, FaGithub, FaEye } from 'react-icons/fa';
 import Image from 'next/image';
 import ProjectModal from '@/components/ui/ProjectModal';
 import { projects, projectFilters, type Project } from '@/data/projects';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ProjectsSection() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t, language } = useLanguage();
   
+  // Get translated projects data
+  const getTranslatedProjects = () => {
+    return projects.map(project => ({
+      ...project,
+      title: t(`projects.${project.id}.title`),
+      category: t(`projects.${project.id}.category`),
+      description: t(`projects.${project.id}.description`),
+      fullDescription: t(`projects.${project.id}.fullDescription`)
+    }));
+  };
 
-
+  const translatedProjects = getTranslatedProjects();
   const filteredProjects = activeFilter === 'All' 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+    ? translatedProjects 
+    : translatedProjects.filter(project => {
+        // Get original category from projects data to match with filter
+        const originalProject = projects.find(p => p.id === project.id);
+        return originalProject?.category === activeFilter;
+      });
 
   return (
     <section className="py-20 bg-zinc-900/30 relative overflow-hidden">
@@ -23,10 +39,10 @@ export default function ProjectsSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Featured <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Projects</span>
+            {t('portfolioPage.featuredProjects')}
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto mb-12">
-            Explore our most impactful projects that showcase our expertise and deliver exceptional results for our clients.
+            {t('portfolioPage.projectsDescription')}
           </p>
 
           {/* Filter Buttons */}
@@ -41,7 +57,7 @@ export default function ProjectsSection() {
                     : 'bg-zinc-800 text-zinc-300 hover:bg-zinc-700 hover:text-white'
                 }`}
               >
-                {filter}
+                {filter === 'All' ? t('portfolioPage.filters.all') : t(`projectFilters.${filter}`)}
               </button>
             ))}
           </div>
@@ -59,6 +75,9 @@ export default function ProjectsSection() {
                   width={800}
                   height={600}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                 />
                 
                 {/* Overlay with Links */}
@@ -135,13 +154,13 @@ export default function ProjectsSection() {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-2xl p-8 border border-zinc-800">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Create Your Success Story?
+              {t('portfolioPage.readyToCreate')}
             </h3>
             <p className="text-zinc-300 mb-6 max-w-2xl mx-auto">
-              Join our portfolio of successful projects. Let's discuss how we can help you achieve similar outstanding results.
+              {t('portfolioPage.joinPortfolio')}
             </p>
             <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-              Start Your Project Today
+              {t('portfolioPage.startProjectToday')}
             </button>
           </div>
         </div>

@@ -1,0 +1,372 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Build, maintain & migrate your digital presence",
+    "subtitle": "Solusi digital terpadu untuk website, aplikasi, dan migrasi platform dengan teknologi modern dan metodologi Agile.",
+    "cta": "Mulai Sekarang",
+    "consultation": "Konsultasi Gratis"
+  },
+  "services": {
+    "title": "Why GOROSEI?",
+    "subtitle": "We deliver comprehensive digital solutions using modern methodologies like Agile and Design Thinking. From development to migration, we ensure optimal performance and security.",
+    "benefits": {
+      "title": "Manfaat dan Keunggulan Layanan",
+      "description": "Klien mendapatkan solusi tepat waktu dengan kualitas tinggi, efisiensi pengembangan maksimal, keamanan data ketat, dan pengalaman pengguna optimal. Tim berkompeten dan perangkat mutakhir menjamin solusi terbaik sesuai kebutuhan bisnis dan teknologi terbaru.",
+      "onTime": "Penyelesaian Tepat Waktu",
+      "onTimeDesc": "Efisiensi pengembangan maksimal",
+      "security": "Standar Keamanan Tinggi",
+      "securityDesc": "OWASP, TLS 1.3, RBAC",
+      "scalable": "Arsitektur Scalable",
+      "scalableDesc": "Maintainable & UX optimal",
+      "experience": "Tim Berpengalaman 3-5 Tahun",
+      "ux": "Desain UX Modern",
+      "support": "Dukungan 24/7"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Temukan jawaban untuk pertanyaan yang sering diajukan tentang layanan digital GOROSEI. Informasi lengkap tentang proses, pembayaran, dan dukungan.",
+    "search": "Cari pertanyaan...",
+    "categories": {
+      "all": "Semua",
+      "general": "Umum",
+      "payment": "Pembayaran",
+      "project": "Proyek",
+      "support": "Dukungan"
+    },
+    "noResults": "Tidak ada pertanyaan yang ditemukan.",
+    "stillHaveQuestions": "Masih ada pertanyaan?",
+    "contactDescription": "Tim kami siap membantu Anda dengan konsultasi gratis tanpa komitmen.",
+    "freeConsultation": "Konsultasi Gratis"
+  },
+  "trustedBy": {
+    "subtitle": "Lebih dari 500+ perusahaan mempercayai GOROSEI"
+  },
+  "introduction": {
+    "label": "Pengenalan",
+    "title": "Layanan Premium Kami",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "services": {
+      "development": {
+        "title": "Pengembangan Website Profesional",
+        "description": "Kami menyediakan layanan pengembangan website custom sesuai kebutuhan bisnis Anda. Dari konsep hingga implementasi menggunakan teknologi terdepan."
+      },
+      "maintenance": {
+        "title": "Maintenance & Support Website",
+        "description": "Layanan maintenance komprehensif termasuk update, perbaikan, dan modifikasi untuk menjaga website Anda tetap optimal."
+      },
+      "migration": {
+        "title": "Migrasi & Transfer Website",
+        "description": "Proses migrasi website yang aman dan efisien dengan downtime minimal. Kami pastikan data dan fungsionalitas tetap utuh."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Showcase Portfolio",
+    "subtitle": "Jelajahi beragam proyek kami yang menampilkan inovasi, kreativitas, dan keunggulan teknis di berbagai industri dan teknologi.",
+    "viewProject": "Lihat Proyek",
+    "viewAll": "Lihat Semua Proyek"
+  },
+  "testimonials": {
+    "title": "Niat kemenangan sejati kami berasal dari kata jujur semua klien tentang layanan kami"
+  },
+  "pricing": {
+    "title": "Paket Harga Fleksibel",
+    "subtitle": "Pilih layanan yang paling sesuai dengan kebutuhan bisnis Anda. Semua harga sudah tetap tanpa biaya tersembunyi.",
+    "description": "Harga transparan, fitur powerful, dan tanpa batasan tersembunyi.",
+    "mostPopular": "Paling Populer",
+    "getStarted": "Mulai Sekarang",
+    "additionalServices": "Layanan Tambahan",
+    "additionalDescription": "Tingkatkan website Anda dengan layanan spesialis kami",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "customSolution": "Butuh solusi custom? Kami siap membantu.",
+    "contactSales": "Hubungi Sales"
+  },
+  "servicesPage": {
+    "title": "Layanan Kami",
+    "subtitle": "Solusi web komprehensif yang dirancang untuk meningkatkan kehadiran digital dan mendorong pertumbuhan bisnis Anda",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "services": {
+      "development": {
+        "title": "Pengembangan Website",
+        "description": "Website custom yang dibangun dengan teknologi modern",
+        "fullDescription": "Kami menciptakan website yang menakjubkan dan responsif menggunakan teknologi terbaru seperti React, Next.js, dan framework CSS modern.",
+        "features": ["Desain Responsif", "SEO Optimized", "Loading Cepat", "UI/UX Modern"]
+      },
+      "maintenance": {
+        "title": "Maintenance Rutin",
+        "description": "Jaga situs Anda tetap update dan berjalan lancar",
+        "fullDescription": "Layanan maintenance kami memastikan website Anda tetap update, aman, dan berkinerja optimal setiap saat.",
+        "features": ["Update Rutin", "Perbaikan Bug", "Monitoring Performa", "Update Konten"]
+      },
+      "optimization": {
+        "title": "Optimasi Kecepatan",
+        "description": "Loading cepat untuk pengalaman pengguna yang lebih baik",
+        "fullDescription": "Kami mengoptimalkan performa website Anda untuk mencapai kecepatan loading yang sangat cepat dan engagement pengguna yang lebih baik.",
+        "features": ["Optimasi Gambar", "Minifikasi Kode", "Setup CDN", "Solusi Caching"]
+      },
+      "security": {
+        "title": "Keamanan Website",
+        "description": "Lindungi situs Anda dari ancaman dan serangan",
+        "fullDescription": "Solusi keamanan komprehensif untuk melindungi website Anda dari malware, hacker, dan ancaman online lainnya.",
+        "features": ["Sertifikat SSL", "Scanning Malware", "Proteksi Firewall", "Monitoring Keamanan"]
+      },
+      "backup": {
+        "title": "Backup Otomatis",
+        "description": "Backup harian untuk menjaga data Anda tetap aman",
+        "fullDescription": "Solusi backup otomatis memastikan data website Anda selalu aman dan dapat dipulihkan dengan cepat saat dibutuhkan.",
+        "features": ["Backup Harian", "Cloud Storage", "Restore Satu Klik", "Version Control"]
+      },
+      "integration": {
+        "title": "Integrasi Plugin",
+        "description": "Integrasi seamless dengan tools penting",
+        "fullDescription": "Kami mengintegrasikan plugin penting dan layanan pihak ketiga untuk meningkatkan fungsionalitas dan pengalaman pengguna website Anda.",
+        "features": ["Integrasi API", "Payment Gateway", "Setup Analytics", "Plugin Custom"]
+      }
+    }
+  },
+  "serviceDetail": {
+    "backToServices": "Kembali ke Layanan",
+    "getStarted": "Mulai Hari Ini",
+    "whatsIncluded": "Yang Termasuk",
+    "keyBenefits": "Manfaat Utama",
+    "ourProcess": "Proses Kami",
+    "readyToStart": "Siap untuk Memulai?",
+    "discussService": "Mari diskusikan bagaimana layanan kami dapat membantu bisnis Anda berkembang",
+    "contactUs": "Hubungi Kami Hari Ini",
+    "viewAllServices": "Lihat Semua Layanan",
+    "development": {
+      "title": "Pengembangan Website",
+      "description": "Website custom yang dibangun dengan teknologi modern",
+      "fullDescription": "Kami menciptakan website yang menakjubkan dan responsif menggunakan teknologi terbaru seperti React, Next.js, dan framework CSS modern. Proses pengembangan kami fokus pada performa, pengalaman pengguna, dan skalabilitas.",
+      "features": ["Desain Responsif", "SEO Optimized", "Loading Cepat", "UI/UX Modern", "Kompatibel Cross-browser", "Pendekatan Mobile-first"],
+      "benefits": ["Meningkatkan visibilitas online dan kehadiran brand", "Engagement pengguna dan conversion rate yang lebih baik", "Arsitektur scalable untuk pertumbuhan masa depan", "Desain profesional yang membangun kepercayaan"],
+      "process": ["Discovery & Planning", "Design & Prototyping", "Development & Testing", "Launch & Optimization"]
+    },
+    "maintenance": {
+      "title": "Maintenance Rutin",
+      "description": "Jaga situs Anda tetap update dan berjalan lancar",
+      "fullDescription": "Layanan maintenance kami memastikan website Anda tetap update, aman, dan berkinerja optimal setiap saat. Kami menangani semua dari update konten hingga patch keamanan.",
+      "features": ["Update Rutin", "Perbaikan Bug", "Monitoring Performa", "Update Konten", "Patch Keamanan", "Manajemen Backup"],
+      "benefits": ["Mengurangi downtime dan masalah teknis", "Keamanan dan perlindungan yang ditingkatkan", "Performa website yang lebih baik", "Ketenangan pikiran dengan dukungan profesional"],
+      "process": ["Audit Situs Awal", "Setup Jadwal Maintenance", "Monitoring & Update Rutin", "Laporan Performa Bulanan"]
+    },
+    "optimization": {
+      "title": "Optimasi Kecepatan",
+      "description": "Loading cepat untuk pengalaman pengguna yang lebih baik",
+      "fullDescription": "Kami mengoptimalkan performa website Anda untuk mencapai kecepatan loading yang sangat cepat dan engagement pengguna yang lebih baik. Teknik optimasi kami meningkatkan pengalaman pengguna dan ranking search engine.",
+      "features": ["Optimasi Gambar", "Minifikasi Kode", "Setup CDN", "Solusi Caching", "Optimasi Database", "Konfigurasi Server"],
+      "benefits": ["Loading halaman lebih cepat (di bawah 3 detik)", "Ranking search engine yang lebih baik", "Pengalaman pengguna dan engagement yang lebih baik", "Conversion rate yang lebih tinggi"],
+      "process": ["Analisis Performa", "Strategi Optimasi", "Implementasi & Testing", "Monitoring Berkelanjutan"]
+    },
+    "security": {
+      "title": "Keamanan Website",
+      "description": "Lindungi situs Anda dari ancaman dan serangan",
+      "fullDescription": "Solusi keamanan komprehensif untuk melindungi website Anda dari malware, hacker, dan ancaman online lainnya. Kami mengimplementasikan multiple layer keamanan untuk menjaga situs dan data Anda tetap aman.",
+      "features": ["Sertifikat SSL", "Scanning Malware", "Proteksi Firewall", "Monitoring Keamanan", "Audit Keamanan Rutin", "Respon Insiden"],
+      "benefits": ["Perlindungan dari ancaman cyber", "Kepercayaan dan confidence pelanggan yang meningkat", "Kepatuhan terhadap standar keamanan", "Monitoring keamanan 24/7"],
+      "process": ["Assessment Keamanan", "Implementasi Langkah Keamanan", "Monitoring Berkelanjutan", "Update Keamanan Rutin"]
+    },
+    "backup": {
+      "title": "Backup Otomatis",
+      "description": "Backup harian untuk menjaga data Anda tetap aman",
+      "fullDescription": "Solusi backup otomatis memastikan data website Anda selalu aman dan dapat dipulihkan dengan cepat saat dibutuhkan. Kami menyediakan multiple lokasi backup dan opsi restore yang mudah.",
+      "features": ["Backup Harian", "Cloud Storage", "Restore Satu Klik", "Version Control", "Penjadwalan Otomatis", "Multiple Lokasi Backup"],
+      "benefits": ["Perlindungan dan recovery data yang lengkap", "Restore cepat jika terjadi masalah", "Ketenangan pikiran dengan backup otomatis", "History versi untuk rollback mudah"],
+      "process": ["Planning Strategi Backup", "Setup Backup Otomatis", "Testing Backup Rutin", "Planning Disaster Recovery"]
+    },
+    "integration": {
+      "title": "Integrasi Plugin",
+      "description": "Integrasi seamless dengan tools penting",
+      "fullDescription": "Kami mengintegrasikan plugin penting dan layanan pihak ketiga untuk meningkatkan fungsionalitas dan pengalaman pengguna website Anda. Dari sistem pembayaran hingga analytics, kami menangani semua integrasi secara profesional.",
+      "features": ["Integrasi API", "Payment Gateway", "Setup Analytics", "Plugin Custom", "Layanan Pihak Ketiga", "Optimasi Performa"],
+      "benefits": ["Fungsionalitas website yang ditingkatkan", "Proses bisnis yang streamlined", "Insight data dan analytics yang lebih baik", "Pengalaman pengguna yang lebih baik"],
+      "process": ["Analisis Requirements", "Planning Integrasi", "Development & Testing", "Deployment & Support"]
+    }
+  },
+  "portfolioPage": {
+    "title": "Portfolio Kami",
+    "subtitle": "Temukan koleksi proyek sukses kami yang telah mentransformasi bisnis dan menciptakan dampak yang berkelanjutan. Setiap proyek merepresentasikan komitmen kami terhadap keunggulan dan inovasi.",
+    "startProject": "Mulai Proyek Anda",
+    "viewCaseStudies": "Lihat Studi Kasus",
+    "featuredProjects": "Proyek Unggulan",
+    "projectsDescription": "Jelajahi proyek-proyek paling berdampak kami yang menunjukkan keahlian dan memberikan hasil luar biasa untuk klien kami.",
+    "readyToCreate": "Siap Menciptakan Kisah Sukses Anda?",
+    "joinPortfolio": "Bergabunglah dengan portfolio proyek sukses kami. Mari diskusikan bagaimana kami dapat membantu Anda mencapai hasil yang luar biasa serupa.",
+    "startProjectToday": "Mulai Proyek Anda Hari Ini",
+    "clientSuccessStories": "Kisah Sukses Klien",
+    "clientTestimonialDescription": "Jangan hanya percaya kata-kata kami. Inilah yang dikatakan klien kami tentang hasil yang telah kami berikan bersama.",
+    "provenResults": "Hasil Terbukti yang Berbicara Banyak",
+    "portfolioShowcase": "Portfolio kami menampilkan kesuksesan yang terukur di berbagai industri. Setiap proyek merepresentasikan kemitraan yang memberikan ROI luar biasa dan pertumbuhan bisnis.",
+    "metrics": {
+      "revenueGenerated": "Revenue yang Dihasilkan",
+      "clientSatisfaction": "Kepuasan Klien",
+      "avgROI": "Rata-rata Peningkatan ROI",
+      "supportAvailable": "Dukungan Tersedia"
+    },
+    "projectResults": "Hasil Proyek",
+    "readyToJoin": "Siap Bergabung dengan Kisah Sukses Kami?",
+    "createMeasurableResults": "Mari ciptakan hasil yang terukur untuk bisnis Anda. Jadwalkan konsultasi untuk mendiskusikan tujuan proyek Anda.",
+    "getFreeConsultation": "Dapatkan Konsultasi Gratis",
+    "viewAllCaseStudies": "Lihat Semua Studi Kasus",
+    "filters": {
+      "all": "Semua"
+    }
+  },
+  "projectFilters": {
+    "Web Development": "Pengembangan Web",
+    "E-commerce": "E-commerce",
+    "Mobile App": "Aplikasi Mobile",
+    "Branding": "Branding"
+  },
+  "projects": {
+    "1": {
+      "title": "TechStart Solutions",
+      "category": "Pengembangan Web",
+      "description": "Website korporat modern dengan animasi canggih dan integrasi CMS",
+      "fullDescription": "Proyek transformasi digital komprehensif untuk TechStart Solutions, menampilkan website korporat modern dengan animasi canggih, integrasi CMS yang seamless, dan performa yang dioptimalkan. Proyek ini mencakup penyelarasan brand lengkap, optimasi pengalaman pengguna, dan peningkatan conversion rate."
+    },
+    "2": {
+      "title": "ShopFlow E-commerce",
+      "category": "E-commerce",
+      "description": "Platform e-commerce lengkap dengan integrasi pembayaran dan manajemen inventori",
+      "fullDescription": "Solusi e-commerce skala penuh yang dibangun untuk ShopFlow, menampilkan pemrosesan pembayaran canggih, manajemen inventori real-time, dan tools analytics komprehensif. Platform ini menangani transaksi volume tinggi dengan pengalaman pengguna yang seamless dan langkah-langkah keamanan yang robust."
+    },
+    "3": {
+      "title": "FitTracker Mobile",
+      "category": "Aplikasi Mobile",
+      "description": "Aplikasi pelacakan kebugaran cross-platform dengan analytics real-time",
+      "fullDescription": "Aplikasi mobile pelacakan kebugaran komprehensif yang menyediakan analytics real-time, rencana workout yang dipersonalisasi, dan fitur sosial. Dibangun dengan React Native untuk kompatibilitas cross-platform dan terintegrasi dengan perangkat wearable untuk monitoring kesehatan yang seamless."
+    },
+    "4": {
+      "title": "Creative Studio Brand",
+      "category": "Branding",
+      "description": "Desain identitas brand lengkap dengan logo, guidelines, dan materi marketing",
+      "fullDescription": "Proyek identitas brand komprehensif untuk Creative Studio, termasuk desain logo, brand guidelines, materi marketing, dan aset digital. Proyek ini fokus pada menciptakan identitas visual yang kohesif yang mencerminkan keunggulan kreatif dan pendekatan profesional studio."
+    },
+    "5": {
+      "title": "DataViz Dashboard",
+      "category": "Pengembangan Web",
+      "description": "Dashboard visualisasi data interaktif untuk analytics bisnis",
+      "fullDescription": "Dashboard business intelligence canggih yang menampilkan visualisasi data interaktif, analytics real-time, dan tools reporting komprehensif. Dibangun untuk menangani dataset besar dengan performa yang dioptimalkan dan antarmuka pengguna yang intuitif untuk pengambilan keputusan berbasis data."
+    },
+    "6": {
+      "title": "RestaurantPro POS",
+      "category": "E-commerce",
+      "description": "Sistem point of sale untuk restoran dengan manajemen inventori dan staff",
+      "fullDescription": "Sistem point-of-sale komprehensif yang dirancang khusus untuk restoran, menampilkan manajemen pesanan, pelacakan inventori, penjadwalan staff, dan manajemen hubungan pelanggan. Sistem ini terintegrasi dengan display dapur dan processor pembayaran untuk operasi yang seamless."
+    }
+  },
+  "aboutPage": {
+    "title": "Tentang Kami",
+    "subtitle": "Kami adalah tim yang penuh semangat dari desainer dan developer yang berdedikasi untuk menciptakan pengalaman digital yang menginspirasi dan menghasilkan hasil.",
+    "mainTitle": "Solusi Digital Sejak 2020",
+    "description1": "GOROSEI mengkhususkan diri dalam solusi digital komprehensif - dari membangun website dan aplikasi dari nol hingga memelihara dan migrasi platform yang ada ke sistem modern.",
+    "description2": "Kami menggunakan metodologi modern seperti Agile, Scrum, dan Design Thinking, dikombinasikan dengan tools canggih termasuk IntelliJ, VS Code, Figma, Postman, Jira, Docker, dan Kubernetes.",
+    "description3": "Setiap proyek mencakup source code terdokumentasi, prototype interaktif, dokumentasi teknis lengkap, dan laporan progress reguler. Kami fokus pada desain yang user-friendly dan performa optimal.",
+    "ourValues": "Nilai-Nilai Kami",
+    "valuesDescription": "Prinsip-prinsip inti ini memandu segala yang kami lakukan dan membentuk cara kami bekerja dengan klien dan satu sama lain.",
+    "values": {
+      "innovation": {
+        "title": "Inovasi",
+        "description": "Kami merangkul teknologi canggih dan solusi kreatif untuk memberikan hasil yang luar biasa."
+      },
+      "collaboration": {
+        "title": "Kolaborasi",
+        "description": "Kami bekerja erat dengan klien untuk memahami visi mereka dan mewujudkannya."
+      },
+      "excellence": {
+        "title": "Keunggulan",
+        "description": "Kami berusaha untuk kesempurnaan di setiap proyek, memastikan standar kualitas tertinggi."
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "Kami mencintai apa yang kami lakukan dan itu terlihat di setiap pixel, setiap baris kode, setiap desain."
+      }
+    },
+    "ourGallery": "Galeri Kami",
+    "galleryDescription": "Lihat sekilas ke dalam workspace kreatif kami, budaya tim, dan passion yang mendorong pekerjaan kami setiap hari.",
+    "readyToWork": "Siap Bekerja Dengan Kami?",
+    "workDescription": "Mari ciptakan sesuatu yang luar biasa bersama. Hubungi kami dan mari diskusikan bagaimana kami dapat mewujudkan visi Anda.",
+    "startProject": "Mulai Proyek Anda"
+  },
+  "faqData": {
+    "project-timeline": {
+      "question": "Berapa lama waktu pengerjaan proyek?",
+      "answer": "Pembuatan website umumnya membutuhkan waktu hingga 1 bulan, dihitung setelah semua materi lengkap (logo, konten, gambar). Untuk proyek sederhana dengan materi lengkap bisa lebih cepat. Proyek custom dengan revisi kompleks akan disesuaikan waktunya."
+    },
+    "payment-methods": {
+      "question": "Metode pembayaran apa saja yang tersedia?",
+      "answer": "Pembayaran dapat dilakukan melalui QRIS atau Transfer Bank atas nama GOROSEI. Kami tidak menerima pembayaran melalui rekening pribadi, e-wallet, atau kartu kredit untuk menjaga keamanan transaksi."
+    },
+    "custom-project": {
+      "question": "Apakah bisa mengerjakan proyek custom?",
+      "answer": "Tentu saja. Kami menangani berbagai kebutuhan custom seperti sistem booking, integrasi API pihak ketiga, fitur unik, atau desain khusus. Silakan sampaikan kebutuhan Anda, kami akan menghitung estimasi biaya dan waktu berdasarkan kompleksitas proyek."
+    },
+    "how-to-order": {
+      "question": "Bagaimana cara memesan layanan GOROSEI?",
+      "answer": "Anda dapat memesan layanan melalui: (1) Mengisi form di halaman Kontak, (2) Klik tombol 'Mulai Sekarang' di Beranda atau halaman Harga, (3) Hubungi kami untuk konsultasi gratis tanpa komitmen."
+    },
+    "revision-policy": {
+      "question": "Berapa kali revisi yang diperbolehkan?",
+      "answer": "Kami menyediakan 2-3 kali revisi mayor untuk desain UI/UX dan arsitektur sistem. Revisi minor seperti penyesuaian warna atau perbaikan kecil tetap kami layani dalam scope. Perubahan besar seperti redesign total akan dievaluasi sebagai change request dengan biaya tambahan."
+    },
+    "feature-changes": {
+      "question": "Bagaimana mekanisme perubahan fitur selama proyek?",
+      "answer": "Perubahan fitur dapat disampaikan kapan saja kepada System Analyst kami. Prosesnya: (1) Analisis dampak internal, (2) Estimasi waktu & biaya, (3) Persetujuan klien, (4) Implementasi. Perubahan dalam scope awal gratis, penambahan fitur baru dihitung sebagai modul tambahan."
+    },
+    "quality-guarantee": {
+      "question": "Apa jaminan kualitas dan garansi layanan?",
+      "answer": "Kami memberikan garansi 30-90 hari setelah rilis untuk bug fixing, error logic, inconsistency desain, dan performa dasar. Setiap deliverable melalui QA Testing lengkap: functional testing, UI/UX validation, API testing, dan load testing. Sistem dipastikan stabil sebelum diserahkan."
+    },
+    "post-production": {
+      "question": "Bagaimana layanan pasca-produksi dan maintenance?",
+      "answer": "Kami menyediakan paket maintenance mencakup bug fixing, update, keamanan, monitoring performa, dan backup berkala. Support melalui chat, email, atau tiket bantuan. Jika tidak puas: (1) Support 3 bulan penuh + 3x revisi besar, atau (2) Refund 50% + website live 1 tahun."
+    },
+    "revision-guarantee": {
+      "question": "Apakah ada garansi revisi?",
+      "answer": "Ya, setiap proyek mendapat 3 kali revisi gratis selama masih dalam scope awal yang disepakati. Penyesuaian di versi awal dapat diajukan tanpa biaya tambahan."
+    },
+    "portfolio-access": {
+      "question": "Di mana bisa melihat portofolio GOROSEI?",
+      "answer": "Karena banyak klien meminta privasi proyek, kami tidak menampilkan portofolio publik. Namun jika membutuhkan referensi, hubungi kami untuk melihat contoh proyek (dengan data yang disamarkan) agar Anda dapat menilai kualitas kerja kami."
+    },
+    "consultation-process": {
+      "question": "Bagaimana proses konsultasi awal?",
+      "answer": "Klik tombol 'Konsultasi Gratis' dan isi form singkat. Kami akan menghubungi Anda via email atau WhatsApp untuk menjadwalkan sesi diskusi sesuai waktu yang nyaman untuk Anda."
+    }
+  },
+  "footer": {
+    "company": "GOROSEI",
+    "tagline": "Digital Solutions",
+    "description": "Solusi digital terpadu untuk website, aplikasi, dan migrasi platform dengan teknologi modern.",
+    "allRightsReserved": "Semua hak dilindungi.",
+    "backToTop": "Kembali ke Atas",
+    "sections": {
+      "services": {
+        "title": "Layanan",
+        "links": {
+          "development": "Pengembangan Website",
+          "maintenance": "Maintenance Website",
+          "optimization": "Optimasi Kecepatan",
+          "security": "Keamanan Website"
+        }
+      },
+      "company": {
+        "title": "Perusahaan",
+        "links": {
+          "about": "Tentang Kami",
+          "portfolio": "Portfolio",
+          "services": "Layanan",
+          "faq": "FAQ"
+        }
+      }
+    }
+  }
+}

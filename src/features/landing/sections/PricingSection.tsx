@@ -1,5 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
+'use client';
+
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function PricingSection() {
+  const { t } = useLanguage();
   const pricingPlans = [
     {
       name: "Basic",
@@ -74,13 +79,13 @@ export default function PricingSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Flexible <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Pricing Plans</span>
+            {t('pricing.title')}
           </h2>
           <p className="text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-4">
-            Choose the service that best fits your business needs. All prices are fixed with no hidden costs.
+            {t('pricing.subtitle')}
           </p>
           <p className="text-zinc-300 text-base">
-            Transparent pricing, powerful features, and no hidden limits.
+            {t('pricing.description')}
           </p>
         </div>
 
@@ -91,7 +96,7 @@ export default function PricingSection() {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
                   <span className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-sm font-medium px-4 py-2 rounded-full">
-                    Most Popular
+                    {t('pricing.mostPopular')}
                   </span>
                 </div>
               )}
@@ -126,7 +131,7 @@ export default function PricingSection() {
                     ? 'bg-gradient-to-r from-purple-500 to-cyan-500 text-white hover:shadow-lg transform hover:scale-105'
                     : 'bg-zinc-700 text-white hover:bg-zinc-600 border border-zinc-600 hover:border-purple-400/50'
                 }`}>
-                  Get Started
+                  {t('pricing.getStarted')}
                 </button>
               </div>
             </div>
@@ -136,8 +141,8 @@ export default function PricingSection() {
         {/* Additional Services */}
         <div className="border-t border-zinc-800 pt-16">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white mb-4">Additional Services</h3>
-            <p className="text-zinc-400 text-lg">Enhance your website with our specialized services</p>
+            <h3 className="text-3xl font-bold text-white mb-4">{t('pricing.additionalServices')}</h3>
+            <p className="text-zinc-400 text-lg">{t('pricing.additionalDescription')}</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -148,7 +153,7 @@ export default function PricingSection() {
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-white">Rp {service.price}</span>
                   <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:shadow-md transition-all duration-300">
-                    Learn More
+                    {t('pricing.learnMore')}
                   </button>
                 </div>
               </div>
@@ -158,9 +163,9 @@ export default function PricingSection() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <p className="text-zinc-400 mb-6">Need a custom solution? We're here to help.</p>
+          <p className="text-zinc-400 mb-6">{t('pricing.customSolution')}</p>
           <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-            Contact Sales
+            {t('pricing.contactSales')}
           </button>
         </div>
       </div>
