@@ -42,13 +42,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const t = (key: string): string => {
     const keys = key.split('.');
-    let value = translations;
+    let value: any = translations;
     
     for (const k of keys) {
       value = value?.[k];
     }
     
-    return value || key;
+    return typeof value === 'string' ? value : key;
   };
 
   return (
