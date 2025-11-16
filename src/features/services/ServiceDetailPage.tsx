@@ -6,131 +6,176 @@ import { notFound } from 'next/navigation';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Image from 'next/image';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ServiceDetailPageProps {
   slug: string;
 }
 
 export default function ServiceDetailPage({ slug }: ServiceDetailPageProps) {
+  const { t } = useLanguage();
+  
   const services = {
     'website-development': {
-      title: "Website Development",
-      description: "Custom websites built with modern technology",
+      title: t('serviceDetail.development.title'),
+      description: t('serviceDetail.development.description'),
       icon: FaCode,
       heroImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop",
-      fullDescription: "We create stunning, responsive websites using the latest technologies like React, Next.js, and modern CSS frameworks. Our development process focuses on performance, user experience, and scalability.",
-      features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Modern UI/UX", "Cross-browser Compatible", "Mobile-first Approach"],
+      fullDescription: t('serviceDetail.development.fullDescription'),
+      features: [
+        t('serviceDetail.development.features.0'),
+        t('serviceDetail.development.features.1'),
+        t('serviceDetail.development.features.2'),
+        t('serviceDetail.development.features.3'),
+        t('serviceDetail.development.features.4'),
+        t('serviceDetail.development.features.5')
+      ],
       benefits: [
-        "Increased online visibility and brand presence",
-        "Better user engagement and conversion rates", 
-        "Scalable architecture for future growth",
-        "Professional design that builds trust"
+        t('serviceDetail.development.benefits.0'),
+        t('serviceDetail.development.benefits.1'),
+        t('serviceDetail.development.benefits.2'),
+        t('serviceDetail.development.benefits.3')
       ],
       process: [
-        "Discovery & Planning",
-        "Design & Prototyping", 
-        "Development & Testing",
-        "Launch & Optimization"
+        t('serviceDetail.development.process.0'),
+        t('serviceDetail.development.process.1'),
+        t('serviceDetail.development.process.2'),
+        t('serviceDetail.development.process.3')
       ]
     },
     'regular-maintenance': {
-      title: "Regular Maintenance",
-      description: "Keep your site updated and running smoothly", 
+      title: t('serviceDetail.maintenance.title'),
+      description: t('serviceDetail.maintenance.description'),
       icon: FaTools,
       heroImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop",
-      fullDescription: "Our maintenance service ensures your website stays updated, secure, and performs optimally at all times. We handle everything from content updates to security patches.",
-      features: ["Regular Updates", "Bug Fixes", "Performance Monitoring", "Content Updates", "Security Patches", "Backup Management"],
+      fullDescription: t('serviceDetail.maintenance.fullDescription'),
+      features: [
+        t('serviceDetail.maintenance.features.0'),
+        t('serviceDetail.maintenance.features.1'),
+        t('serviceDetail.maintenance.features.2'),
+        t('serviceDetail.maintenance.features.3'),
+        t('serviceDetail.maintenance.features.4'),
+        t('serviceDetail.maintenance.features.5')
+      ],
       benefits: [
-        "Reduced downtime and technical issues",
-        "Enhanced security and protection",
-        "Improved website performance",
-        "Peace of mind with professional support"
+        t('serviceDetail.maintenance.benefits.0'),
+        t('serviceDetail.maintenance.benefits.1'),
+        t('serviceDetail.maintenance.benefits.2'),
+        t('serviceDetail.maintenance.benefits.3')
       ],
       process: [
-        "Initial Site Audit",
-        "Maintenance Schedule Setup",
-        "Regular Monitoring & Updates", 
-        "Monthly Performance Reports"
+        t('serviceDetail.maintenance.process.0'),
+        t('serviceDetail.maintenance.process.1'),
+        t('serviceDetail.maintenance.process.2'),
+        t('serviceDetail.maintenance.process.3')
       ]
     },
     'speed-optimization': {
-      title: "Speed Optimization",
-      description: "Fast loading times for better user experience",
+      title: t('serviceDetail.optimization.title'),
+      description: t('serviceDetail.optimization.description'),
       icon: FaTachometerAlt,
       heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
-      fullDescription: "We optimize your website's performance to achieve lightning-fast loading speeds and better user engagement. Our optimization techniques improve both user experience and search engine rankings.",
-      features: ["Image Optimization", "Code Minification", "CDN Setup", "Caching Solutions", "Database Optimization", "Server Configuration"],
+      fullDescription: t('serviceDetail.optimization.fullDescription'),
+      features: [
+        t('serviceDetail.optimization.features.0'),
+        t('serviceDetail.optimization.features.1'),
+        t('serviceDetail.optimization.features.2'),
+        t('serviceDetail.optimization.features.3'),
+        t('serviceDetail.optimization.features.4'),
+        t('serviceDetail.optimization.features.5')
+      ],
       benefits: [
-        "Faster page load times (under 3 seconds)",
-        "Better search engine rankings",
-        "Improved user experience and engagement",
-        "Higher conversion rates"
+        t('serviceDetail.optimization.benefits.0'),
+        t('serviceDetail.optimization.benefits.1'),
+        t('serviceDetail.optimization.benefits.2'),
+        t('serviceDetail.optimization.benefits.3')
       ],
       process: [
-        "Performance Analysis",
-        "Optimization Strategy",
-        "Implementation & Testing",
-        "Ongoing Monitoring"
+        t('serviceDetail.optimization.process.0'),
+        t('serviceDetail.optimization.process.1'),
+        t('serviceDetail.optimization.process.2'),
+        t('serviceDetail.optimization.process.3')
       ]
     },
     'website-security': {
-      title: "Website Security",
-      description: "Protect your site from threats and attacks",
+      title: t('serviceDetail.security.title'),
+      description: t('serviceDetail.security.description'),
       icon: FaShieldAlt,
       heroImage: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=400&fit=crop",
-      fullDescription: "Comprehensive security solutions to protect your website from malware, hackers, and other online threats. We implement multiple layers of security to keep your site and data safe.",
-      features: ["SSL Certificates", "Malware Scanning", "Firewall Protection", "Security Monitoring", "Regular Security Audits", "Incident Response"],
+      fullDescription: t('serviceDetail.security.fullDescription'),
+      features: [
+        t('serviceDetail.security.features.0'),
+        t('serviceDetail.security.features.1'),
+        t('serviceDetail.security.features.2'),
+        t('serviceDetail.security.features.3'),
+        t('serviceDetail.security.features.4'),
+        t('serviceDetail.security.features.5')
+      ],
       benefits: [
-        "Protection against cyber threats",
-        "Enhanced customer trust and confidence",
-        "Compliance with security standards",
-        "24/7 security monitoring"
+        t('serviceDetail.security.benefits.0'),
+        t('serviceDetail.security.benefits.1'),
+        t('serviceDetail.security.benefits.2'),
+        t('serviceDetail.security.benefits.3')
       ],
       process: [
-        "Security Assessment",
-        "Implementation of Security Measures",
-        "Continuous Monitoring",
-        "Regular Security Updates"
+        t('serviceDetail.security.process.0'),
+        t('serviceDetail.security.process.1'),
+        t('serviceDetail.security.process.2'),
+        t('serviceDetail.security.process.3')
       ]
     },
     'automatic-backup': {
-      title: "Automatic Backup",
-      description: "Daily backups to keep your data safe",
+      title: t('serviceDetail.backup.title'),
+      description: t('serviceDetail.backup.description'),
       icon: FaDatabase,
       heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop",
-      fullDescription: "Automated backup solutions ensure your website data is always safe and can be restored quickly when needed. We provide multiple backup locations and easy restoration options.",
-      features: ["Daily Backups", "Cloud Storage", "One-Click Restore", "Version Control", "Automated Scheduling", "Multiple Backup Locations"],
+      fullDescription: t('serviceDetail.backup.fullDescription'),
+      features: [
+        t('serviceDetail.backup.features.0'),
+        t('serviceDetail.backup.features.1'),
+        t('serviceDetail.backup.features.2'),
+        t('serviceDetail.backup.features.3'),
+        t('serviceDetail.backup.features.4'),
+        t('serviceDetail.backup.features.5')
+      ],
       benefits: [
-        "Complete data protection and recovery",
-        "Quick restoration in case of issues",
-        "Peace of mind with automated backups",
-        "Version history for easy rollbacks"
+        t('serviceDetail.backup.benefits.0'),
+        t('serviceDetail.backup.benefits.1'),
+        t('serviceDetail.backup.benefits.2'),
+        t('serviceDetail.backup.benefits.3')
       ],
       process: [
-        "Backup Strategy Planning",
-        "Automated Backup Setup",
-        "Regular Backup Testing",
-        "Disaster Recovery Planning"
+        t('serviceDetail.backup.process.0'),
+        t('serviceDetail.backup.process.1'),
+        t('serviceDetail.backup.process.2'),
+        t('serviceDetail.backup.process.3')
       ]
     },
     'plugin-integration': {
-      title: "Plugin Integration",
-      description: "Seamless integration with essential tools",
+      title: t('serviceDetail.integration.title'),
+      description: t('serviceDetail.integration.description'),
       icon: FaPuzzlePiece,
       heroImage: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=400&fit=crop",
-      fullDescription: "We integrate essential plugins and third-party services to enhance your website's functionality and user experience. From payment systems to analytics, we handle all integrations professionally.",
-      features: ["API Integration", "Payment Gateways", "Analytics Setup", "Custom Plugins", "Third-party Services", "Performance Optimization"],
+      fullDescription: t('serviceDetail.integration.fullDescription'),
+      features: [
+        t('serviceDetail.integration.features.0'),
+        t('serviceDetail.integration.features.1'),
+        t('serviceDetail.integration.features.2'),
+        t('serviceDetail.integration.features.3'),
+        t('serviceDetail.integration.features.4'),
+        t('serviceDetail.integration.features.5')
+      ],
       benefits: [
-        "Enhanced website functionality",
-        "Streamlined business processes",
-        "Better data insights and analytics",
-        "Improved user experience"
+        t('serviceDetail.integration.benefits.0'),
+        t('serviceDetail.integration.benefits.1'),
+        t('serviceDetail.integration.benefits.2'),
+        t('serviceDetail.integration.benefits.3')
       ],
       process: [
-        "Requirements Analysis",
-        "Integration Planning",
-        "Development & Testing",
-        "Deployment & Support"
+        t('serviceDetail.integration.process.0'),
+        t('serviceDetail.integration.process.1'),
+        t('serviceDetail.integration.process.2'),
+        t('serviceDetail.integration.process.3')
       ]
     }
   };
@@ -154,7 +199,7 @@ export default function ServiceDetailPage({ slug }: ServiceDetailPageProps) {
           className="inline-flex items-center text-zinc-400 hover:text-white transition-colors"
         >
           <FaArrowLeft className="mr-2" />
-          Back to Services
+          {t('serviceDetail.backToServices')}
         </Link>
       </div>
 
@@ -176,7 +221,7 @@ export default function ServiceDetailPage({ slug }: ServiceDetailPageProps) {
               </p>
               
               <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                Get Started Today
+                {t('serviceDetail.getStarted')}
               </button>
             </div>
             
@@ -200,7 +245,7 @@ export default function ServiceDetailPage({ slug }: ServiceDetailPageProps) {
       <section className="py-20 bg-zinc-900/50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            What's <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Included</span>
+            {t('serviceDetail.whatsIncluded')}
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -220,7 +265,7 @@ export default function ServiceDetailPage({ slug }: ServiceDetailPageProps) {
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                Key <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Benefits</span>
+                {t('serviceDetail.keyBenefits')}
               </h2>
               
               <div className="space-y-6">
@@ -237,7 +282,7 @@ export default function ServiceDetailPage({ slug }: ServiceDetailPageProps) {
             
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                Our <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Process</span>
+                {t('serviceDetail.ourProcess')}
               </h2>
               
               <div className="space-y-6">
@@ -259,20 +304,20 @@ export default function ServiceDetailPage({ slug }: ServiceDetailPageProps) {
       <section className="py-20 bg-gradient-to-r from-purple-900/20 to-cyan-900/20">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Get Started?
+            {t('serviceDetail.readyToStart')}
           </h2>
           <p className="text-xl text-zinc-300 mb-8">
-            Let's discuss how our {service.title.toLowerCase()} service can help your business grow
+            {t('serviceDetail.discussService')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-              Contact Us Today
+              {t('serviceDetail.contactUs')}
             </button>
             <Link 
               href="/services"
               className="text-white hover:text-zinc-300 flex items-center justify-center space-x-2 px-8 py-4 border border-zinc-600 rounded-full hover:border-white transition-all duration-300"
             >
-              <span>View All Services</span>
+              <span>{t('serviceDetail.viewAllServices')}</span>
             </Link>
           </div>
         </div>

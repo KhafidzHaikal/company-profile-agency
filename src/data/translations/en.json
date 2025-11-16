@@ -1,0 +1,372 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Build, maintain & migrate your digital presence",
+    "subtitle": "Comprehensive digital solutions for websites, applications, and platform migration using modern technology and Agile methodology.",
+    "cta": "Get Started",
+    "consultation": "Free Consultation"
+  },
+  "services": {
+    "title": "Why GOROSEI?",
+    "subtitle": "We deliver comprehensive digital solutions using modern methodologies like Agile and Design Thinking. From development to migration, we ensure optimal performance and security.",
+    "benefits": {
+      "title": "Service Benefits & Advantages",
+      "description": "Clients receive timely solutions with high quality, maximum development efficiency, strict data security, and optimal user experience. Our competent team and cutting-edge tools guarantee the best solutions according to business needs and latest technology.",
+      "onTime": "On-Time Delivery",
+      "onTimeDesc": "Maximum development efficiency",
+      "security": "High Security Standards",
+      "securityDesc": "OWASP, TLS 1.3, RBAC",
+      "scalable": "Scalable Architecture",
+      "scalableDesc": "Maintainable & optimal UX",
+      "experience": "3-5 Years Experienced Team",
+      "ux": "Modern UX Design",
+      "support": "24/7 Support"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to frequently asked questions about GOROSEI digital services. Complete information about processes, payments, and support.",
+    "search": "Search questions...",
+    "categories": {
+      "all": "All",
+      "general": "General",
+      "payment": "Payment",
+      "project": "Project",
+      "support": "Support"
+    },
+    "noResults": "No questions found.",
+    "stillHaveQuestions": "Still have questions?",
+    "contactDescription": "Our team is ready to help you with free consultation without commitment.",
+    "freeConsultation": "Free Consultation"
+  },
+  "trustedBy": {
+    "subtitle": "More than 500+ companies trust GOROSEI"
+  },
+  "introduction": {
+    "label": "Introduction",
+    "title": "Our Premium Services",
+    "learnMore": "Learn More",
+    "services": {
+      "development": {
+        "title": "Professional Website Development",
+        "description": "We provide custom website development services tailored to your business needs. From concept to implementation using cutting-edge technology."
+      },
+      "maintenance": {
+        "title": "Website Maintenance & Support",
+        "description": "Comprehensive maintenance services including updates, fixes, and modifications to keep your website performing at its best."
+      },
+      "migration": {
+        "title": "Website Migration & Transfer",
+        "description": "Safe and efficient website migration process with minimal downtime. We ensure your data and functionality remain intact."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Showcase Portfolio",
+    "subtitle": "Explore our diverse range of projects showcasing innovation, creativity, and technical excellence across various industries and technologies.",
+    "viewProject": "View Project",
+    "viewAll": "View All Projects"
+  },
+  "testimonials": {
+    "title": "Our true winning intention came from all of our clients honest word of our services"
+  },
+  "pricing": {
+    "title": "Flexible Pricing Plans",
+    "subtitle": "Choose the service that best fits your business needs. All prices are fixed with no hidden costs.",
+    "description": "Transparent pricing, powerful features, and no hidden limits.",
+    "mostPopular": "Most Popular",
+    "getStarted": "Get Started",
+    "additionalServices": "Additional Services",
+    "additionalDescription": "Enhance your website with our specialized services",
+    "learnMore": "Learn More",
+    "customSolution": "Need a custom solution? We're here to help.",
+    "contactSales": "Contact Sales"
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive web solutions designed to elevate your digital presence and drive business growth",
+    "learnMore": "Learn More",
+    "services": {
+      "development": {
+        "title": "Website Development",
+        "description": "Custom websites built with modern technology",
+        "fullDescription": "We create stunning, responsive websites using the latest technologies like React, Next.js, and modern CSS frameworks.",
+        "features": ["Responsive Design", "SEO Optimized", "Fast Loading", "Modern UI/UX"]
+      },
+      "maintenance": {
+        "title": "Regular Maintenance",
+        "description": "Keep your site updated and running smoothly",
+        "fullDescription": "Our maintenance service ensures your website stays updated, secure, and performs optimally at all times.",
+        "features": ["Regular Updates", "Bug Fixes", "Performance Monitoring", "Content Updates"]
+      },
+      "optimization": {
+        "title": "Speed Optimization",
+        "description": "Fast loading times for better user experience",
+        "fullDescription": "We optimize your website's performance to achieve lightning-fast loading speeds and better user engagement.",
+        "features": ["Image Optimization", "Code Minification", "CDN Setup", "Caching Solutions"]
+      },
+      "security": {
+        "title": "Website Security",
+        "description": "Protect your site from threats and attacks",
+        "fullDescription": "Comprehensive security solutions to protect your website from malware, hackers, and other online threats.",
+        "features": ["SSL Certificates", "Malware Scanning", "Firewall Protection", "Security Monitoring"]
+      },
+      "backup": {
+        "title": "Automatic Backup",
+        "description": "Daily backups to keep your data safe",
+        "fullDescription": "Automated backup solutions ensure your website data is always safe and can be restored quickly when needed.",
+        "features": ["Daily Backups", "Cloud Storage", "One-Click Restore", "Version Control"]
+      },
+      "integration": {
+        "title": "Plugin Integration",
+        "description": "Seamless integration with essential tools",
+        "fullDescription": "We integrate essential plugins and third-party services to enhance your website's functionality and user experience.",
+        "features": ["API Integration", "Payment Gateways", "Analytics Setup", "Custom Plugins"]
+      }
+    }
+  },
+  "serviceDetail": {
+    "backToServices": "Back to Services",
+    "getStarted": "Get Started Today",
+    "whatsIncluded": "What's Included",
+    "keyBenefits": "Key Benefits",
+    "ourProcess": "Our Process",
+    "readyToStart": "Ready to Get Started?",
+    "discussService": "Let's discuss how our service can help your business grow",
+    "contactUs": "Contact Us Today",
+    "viewAllServices": "View All Services",
+    "development": {
+      "title": "Website Development",
+      "description": "Custom websites built with modern technology",
+      "fullDescription": "We create stunning, responsive websites using the latest technologies like React, Next.js, and modern CSS frameworks. Our development process focuses on performance, user experience, and scalability.",
+      "features": ["Responsive Design", "SEO Optimized", "Fast Loading", "Modern UI/UX", "Cross-browser Compatible", "Mobile-first Approach"],
+      "benefits": ["Increased online visibility and brand presence", "Better user engagement and conversion rates", "Scalable architecture for future growth", "Professional design that builds trust"],
+      "process": ["Discovery & Planning", "Design & Prototyping", "Development & Testing", "Launch & Optimization"]
+    },
+    "maintenance": {
+      "title": "Regular Maintenance",
+      "description": "Keep your site updated and running smoothly",
+      "fullDescription": "Our maintenance service ensures your website stays updated, secure, and performs optimally at all times. We handle everything from content updates to security patches.",
+      "features": ["Regular Updates", "Bug Fixes", "Performance Monitoring", "Content Updates", "Security Patches", "Backup Management"],
+      "benefits": ["Reduced downtime and technical issues", "Enhanced security and protection", "Improved website performance", "Peace of mind with professional support"],
+      "process": ["Initial Site Audit", "Maintenance Schedule Setup", "Regular Monitoring & Updates", "Monthly Performance Reports"]
+    },
+    "optimization": {
+      "title": "Speed Optimization",
+      "description": "Fast loading times for better user experience",
+      "fullDescription": "We optimize your website's performance to achieve lightning-fast loading speeds and better user engagement. Our optimization techniques improve both user experience and search engine rankings.",
+      "features": ["Image Optimization", "Code Minification", "CDN Setup", "Caching Solutions", "Database Optimization", "Server Configuration"],
+      "benefits": ["Faster page load times (under 3 seconds)", "Better search engine rankings", "Improved user experience and engagement", "Higher conversion rates"],
+      "process": ["Performance Analysis", "Optimization Strategy", "Implementation & Testing", "Ongoing Monitoring"]
+    },
+    "security": {
+      "title": "Website Security",
+      "description": "Protect your site from threats and attacks",
+      "fullDescription": "Comprehensive security solutions to protect your website from malware, hackers, and other online threats. We implement multiple layers of security to keep your site and data safe.",
+      "features": ["SSL Certificates", "Malware Scanning", "Firewall Protection", "Security Monitoring", "Regular Security Audits", "Incident Response"],
+      "benefits": ["Protection against cyber threats", "Enhanced customer trust and confidence", "Compliance with security standards", "24/7 security monitoring"],
+      "process": ["Security Assessment", "Implementation of Security Measures", "Continuous Monitoring", "Regular Security Updates"]
+    },
+    "backup": {
+      "title": "Automatic Backup",
+      "description": "Daily backups to keep your data safe",
+      "fullDescription": "Automated backup solutions ensure your website data is always safe and can be restored quickly when needed. We provide multiple backup locations and easy restoration options.",
+      "features": ["Daily Backups", "Cloud Storage", "One-Click Restore", "Version Control", "Automated Scheduling", "Multiple Backup Locations"],
+      "benefits": ["Complete data protection and recovery", "Quick restoration in case of issues", "Peace of mind with automated backups", "Version history for easy rollbacks"],
+      "process": ["Backup Strategy Planning", "Automated Backup Setup", "Regular Backup Testing", "Disaster Recovery Planning"]
+    },
+    "integration": {
+      "title": "Plugin Integration",
+      "description": "Seamless integration with essential tools",
+      "fullDescription": "We integrate essential plugins and third-party services to enhance your website's functionality and user experience. From payment systems to analytics, we handle all integrations professionally.",
+      "features": ["API Integration", "Payment Gateways", "Analytics Setup", "Custom Plugins", "Third-party Services", "Performance Optimization"],
+      "benefits": ["Enhanced website functionality", "Streamlined business processes", "Better data insights and analytics", "Improved user experience"],
+      "process": ["Requirements Analysis", "Integration Planning", "Development & Testing", "Deployment & Support"]
+    }
+  },
+  "portfolioPage": {
+    "title": "Our Portfolio",
+    "subtitle": "Discover our collection of successful projects that have transformed businesses and created lasting impact. Each project represents our commitment to excellence and innovation.",
+    "startProject": "Start Your Project",
+    "viewCaseStudies": "View Case Studies",
+    "featuredProjects": "Featured Projects",
+    "projectsDescription": "Explore our most impactful projects that showcase our expertise and deliver exceptional results for our clients.",
+    "readyToCreate": "Ready to Create Your Success Story?",
+    "joinPortfolio": "Join our portfolio of successful projects. Let's discuss how we can help you achieve similar outstanding results.",
+    "startProjectToday": "Start Your Project Today",
+    "clientSuccessStories": "Client Success Stories",
+    "clientTestimonialDescription": "Don't just take our word for it. Here's what our clients say about the results we've delivered together.",
+    "provenResults": "Proven Results That Speak Volumes",
+    "portfolioShowcase": "Our portfolio showcases measurable success across various industries. Each project represents a partnership that delivered exceptional ROI and business growth.",
+    "metrics": {
+      "revenueGenerated": "Revenue Generated",
+      "clientSatisfaction": "Client Satisfaction",
+      "avgROI": "Avg. ROI Increase",
+      "supportAvailable": "Support Available"
+    },
+    "projectResults": "Project Results",
+    "readyToJoin": "Ready to Join Our Success Stories?",
+    "createMeasurableResults": "Let's create measurable results for your business. Schedule a consultation to discuss your project goals.",
+    "getFreeConsultation": "Get Free Consultation",
+    "viewAllCaseStudies": "View All Case Studies",
+    "filters": {
+      "all": "All"
+    }
+  },
+  "projectFilters": {
+    "Web Development": "Web Development",
+    "E-commerce": "E-commerce",
+    "Mobile App": "Mobile App",
+    "Branding": "Branding"
+  },
+  "projects": {
+    "1": {
+      "title": "TechStart Solutions",
+      "category": "Web Development",
+      "description": "Modern corporate website with advanced animations and CMS integration",
+      "fullDescription": "A comprehensive digital transformation project for TechStart Solutions, featuring a modern corporate website with advanced animations, seamless CMS integration, and optimized performance. The project included complete brand alignment, user experience optimization, and conversion rate improvements."
+    },
+    "2": {
+      "title": "ShopFlow E-commerce",
+      "category": "E-commerce",
+      "description": "Complete e-commerce platform with payment integration and inventory management",
+      "fullDescription": "A full-scale e-commerce solution built for ShopFlow, featuring advanced payment processing, real-time inventory management, and comprehensive analytics. The platform handles high-volume transactions with seamless user experience and robust security measures."
+    },
+    "3": {
+      "title": "FitTracker Mobile",
+      "category": "Mobile App",
+      "description": "Cross-platform fitness tracking app with real-time analytics",
+      "fullDescription": "A comprehensive fitness tracking mobile application that provides real-time analytics, personalized workout plans, and social features. Built with React Native for cross-platform compatibility and integrated with wearable devices for seamless health monitoring."
+    },
+    "4": {
+      "title": "Creative Studio Brand",
+      "category": "Branding",
+      "description": "Complete brand identity design with logo, guidelines, and marketing materials",
+      "fullDescription": "A comprehensive brand identity project for Creative Studio, including logo design, brand guidelines, marketing materials, and digital assets. The project focused on creating a cohesive visual identity that reflects the studio's creative excellence and professional approach."
+    },
+    "5": {
+      "title": "DataViz Dashboard",
+      "category": "Web Development",
+      "description": "Interactive data visualization dashboard for business analytics",
+      "fullDescription": "An advanced business intelligence dashboard featuring interactive data visualizations, real-time analytics, and comprehensive reporting tools. Built to handle large datasets with optimized performance and intuitive user interface for data-driven decision making."
+    },
+    "6": {
+      "title": "RestaurantPro POS",
+      "category": "E-commerce",
+      "description": "Point of sale system for restaurants with inventory and staff management",
+      "fullDescription": "A comprehensive point-of-sale system designed specifically for restaurants, featuring order management, inventory tracking, staff scheduling, and customer relationship management. The system integrates with kitchen displays and payment processors for seamless operations."
+    }
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "We are a passionate team of designers and developers dedicated to creating digital experiences that inspire and drive results.",
+    "mainTitle": "Digital Solutions Since 2020",
+    "description1": "GOROSEI specializes in comprehensive digital solutions - from building websites and apps from scratch to maintaining and migrating existing platforms to modern systems.",
+    "description2": "We use modern methodologies like Agile, Scrum, and Design Thinking, combined with cutting-edge tools including IntelliJ, VS Code, Figma, Postman, Jira, Docker, and Kubernetes.",
+    "description3": "Every project includes documented source code, interactive prototypes, complete technical documentation, and regular progress reports. We focus on user-friendly design and optimal performance.",
+    "ourValues": "Our Values",
+    "valuesDescription": "These core principles guide everything we do and shape how we work with our clients and each other.",
+    "values": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "We embrace cutting-edge technologies and creative solutions to deliver exceptional results."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "We work closely with our clients to understand their vision and bring it to life."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for perfection in every project, ensuring the highest quality standards."
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "We love what we do and it shows in every pixel, every line of code, every design."
+      }
+    },
+    "ourGallery": "Our Gallery",
+    "galleryDescription": "Take a glimpse into our creative workspace, team culture, and the passion that drives our work every day.",
+    "readyToWork": "Ready to Work With Us?",
+    "workDescription": "Let's create something amazing together. Get in touch and let's discuss how we can bring your vision to life.",
+    "startProject": "Start Your Project"
+  },
+  "faqData": {
+    "project-timeline": {
+      "question": "How long does project development take?",
+      "answer": "Website development generally takes up to 1 month, calculated after all materials are complete (logo, content, images). For simple projects with complete materials, it can be faster. Custom projects with complex revisions will be adjusted accordingly."
+    },
+    "payment-methods": {
+      "question": "What payment methods are available?",
+      "answer": "Payment can be made via QRIS or Bank Transfer under GOROSEI name. We do not accept payments through personal accounts, e-wallets, or credit cards to maintain transaction security."
+    },
+    "custom-project": {
+      "question": "Can you handle custom projects?",
+      "answer": "Absolutely. We handle various custom needs such as booking systems, third-party API integrations, unique features, or custom designs. Please share your requirements, and we'll calculate cost and time estimates based on project complexity."
+    },
+    "how-to-order": {
+      "question": "How to order GOROSEI services?",
+      "answer": "You can order services through: (1) Fill out the form on the Contact page, (2) Click 'Get Started' button on Homepage or Pricing page, (3) Contact us for free consultation without commitment."
+    },
+    "revision-policy": {
+      "question": "How many revisions are allowed?",
+      "answer": "We provide 2-3 major revisions for UI/UX design and system architecture. Minor revisions like color adjustments or small fixes are still served within scope. Major changes like total redesign will be evaluated as change requests with additional costs."
+    },
+    "feature-changes": {
+      "question": "What's the mechanism for feature changes during the project?",
+      "answer": "Feature changes can be communicated anytime to our System Analyst. Process: (1) Internal impact analysis, (2) Time & cost estimation, (3) Client approval, (4) Implementation. Changes within initial scope are free, new feature additions are calculated as additional modules."
+    },
+    "quality-guarantee": {
+      "question": "What quality assurance and service guarantee do you provide?",
+      "answer": "We provide 30-90 days warranty after release for bug fixing, logic errors, design inconsistencies, and basic performance. Every deliverable goes through complete QA Testing: functional testing, UI/UX validation, API testing, and load testing. System is ensured stable before handover."
+    },
+    "post-production": {
+      "question": "How do post-production and maintenance services work?",
+      "answer": "We provide maintenance packages including bug fixing, updates, security, performance monitoring, and regular backups. Support through chat, email, or help tickets. If unsatisfied: (1) Full 3-month support + 3x major revisions, or (2) 50% refund + website live for 1 year."
+    },
+    "revision-guarantee": {
+      "question": "Is there a revision guarantee?",
+      "answer": "Yes, every project gets 3 free revisions as long as it's within the agreed initial scope. Adjustments in the initial version can be requested without additional costs."
+    },
+    "portfolio-access": {
+      "question": "Where can I see GOROSEI's portfolio?",
+      "answer": "Since many clients request project privacy, we don't display public portfolios. However, if you need references, contact us to see project examples (with anonymized data) so you can assess our work quality."
+    },
+    "consultation-process": {
+      "question": "How does the initial consultation process work?",
+      "answer": "Click the 'Free Consultation' button and fill out a brief form. We'll contact you via email or WhatsApp to schedule a discussion session at a time convenient for you."
+    }
+  },
+  "footer": {
+    "company": "GOROSEI",
+    "tagline": "Digital Solutions",
+    "description": "Comprehensive digital solutions for websites, applications, and platform migration using modern technology.",
+    "allRightsReserved": "All rights reserved.",
+    "backToTop": "Back to Top",
+    "sections": {
+      "services": {
+        "title": "Services",
+        "links": {
+          "development": "Website Development",
+          "maintenance": "Website Maintenance",
+          "optimization": "Speed Optimization",
+          "security": "Website Security"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "links": {
+          "about": "About Us",
+          "portfolio": "Portfolio",
+          "services": "Services",
+          "faq": "FAQ"
+        }
+      }
+    }
+  }
+}

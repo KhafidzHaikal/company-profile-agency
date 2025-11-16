@@ -3,8 +3,11 @@
 
 import { SiGoogle, SiApple, SiNetflix, SiSpotify, SiAdobe, SiAirbnb, SiUber, SiAmazon } from 'react-icons/si';
 import { FaMicrosoft } from 'react-icons/fa';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function TrustedBySection() {
+  const { t } = useLanguage();
+  
   const companies = [
     { name: "Apple", icon: SiApple },
     { name: "Microsoft", icon: FaMicrosoft },
@@ -20,7 +23,7 @@ export default function TrustedBySection() {
     <section className="py-16 bg-zinc-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <p className="text-center text-zinc-400 mb-12">
-          More than 500+ companies trust Creative Agency
+          {t('trustedBy.subtitle')}
         </p>
         
         <div className="relative overflow-hidden">

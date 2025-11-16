@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer';
 import PortfolioHeroSection from './sections/PortfolioHeroSection';
 import ProjectsSection from './sections/ProjectsSection';
 import TestimonialsPortfolioSection from './sections/TestimonialsPortfolioSection';
+import ScrollToTop from '@/components/ui/ScrollToTop';
 
 export default function PortfolioPage() {
   return (
@@ -14,6 +15,7 @@ export default function PortfolioPage() {
         <PortfolioHeroSection />
         <ProjectsSection />
         <TestimonialsPortfolioSection />
+        <ScrollToTop />
       </div>
       <Footer />
     </>

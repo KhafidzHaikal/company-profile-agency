@@ -1,9 +1,10 @@
 'use client';
 
 import { portfolioStats } from '@/data/stats';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function PortfolioHeroSection() {
-
+  const { t } = useLanguage();
 
   return (
     <section className="py-20 relative overflow-hidden">
@@ -16,19 +17,18 @@ export default function PortfolioHeroSection() {
         {/* Hero Content */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Our <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Portfolio</span>
+            {t('portfolioPage.title')}
           </h1>
           <p className="text-xl text-zinc-300 max-w-4xl mx-auto leading-relaxed mb-12">
-            Discover our collection of successful projects that have transformed businesses and created lasting impact. 
-            Each project represents our commitment to excellence and innovation.
+            {t('portfolioPage.subtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-              Start Your Project
+              {t('portfolioPage.startProject')}
             </button>
             <button className="text-white hover:text-zinc-300 flex items-center justify-center space-x-2 px-8 py-4 border border-zinc-600 rounded-full hover:border-white transition-all duration-300">
-              <span>View Case Studies</span>
+              <span>{t('portfolioPage.viewCaseStudies')}</span>
               <span>→</span>
             </button>
           </div>

@@ -3,30 +3,31 @@
 import { FaUsers, FaLightbulb, FaRocket, FaHeart } from 'react-icons/fa';
 import Image from 'next/image';
 import { aboutStats } from '@/data/stats';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function AboutUsSection() {
-
+  const { t } = useLanguage();
 
   const values = [
     {
       icon: FaLightbulb,
-      title: "Innovation",
-      description: "We embrace cutting-edge technologies and creative solutions to deliver exceptional results."
+      title: t('aboutPage.values.innovation.title'),
+      description: t('aboutPage.values.innovation.description')
     },
     {
       icon: FaUsers,
-      title: "Collaboration",
-      description: "We work closely with our clients to understand their vision and bring it to life."
+      title: t('aboutPage.values.collaboration.title'),
+      description: t('aboutPage.values.collaboration.description')
     },
     {
       icon: FaRocket,
-      title: "Excellence",
-      description: "We strive for perfection in every project, ensuring the highest quality standards."
+      title: t('aboutPage.values.excellence.title'),
+      description: t('aboutPage.values.excellence.description')
     },
     {
       icon: FaHeart,
-      title: "Passion",
-      description: "We love what we do and it shows in every pixel, every line of code, every design."
+      title: t('aboutPage.values.passion.title'),
+      description: t('aboutPage.values.passion.description')
     }
   ];
 
@@ -41,10 +42,10 @@ export default function AboutUsSection() {
         {/* Hero Section */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            About <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Us</span>
+            {t('aboutPage.title')}
           </h1>
           <p className="text-xl text-zinc-300 max-w-3xl mx-auto leading-relaxed">
-            We are a passionate team of designers and developers dedicated to creating digital experiences that inspire and drive results.
+            {t('aboutPage.subtitle')}
           </p>
         </div>
 
@@ -52,20 +53,20 @@ export default function AboutUsSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Crafting Digital Excellence Since <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">2019</span>
+              {t('aboutPage.mainTitle')}
             </h2>
             
             <div className="space-y-6 text-zinc-300 leading-relaxed">
               <p>
-                Creative Agency was born from a simple belief: that great design and technology can transform businesses and create meaningful connections between brands and their audiences.
+                {t('aboutPage.description1')}
               </p>
               
               <p>
-                Our journey began with a small team of passionate creatives who shared a vision of delivering exceptional digital experiences. Today, we've grown into a full-service agency that combines strategic thinking, innovative design, and cutting-edge development.
+                {t('aboutPage.description2')}
               </p>
               
               <p>
-                We don't just build websites and applications – we craft digital solutions that tell your story, engage your audience, and drive your business forward. Every project is an opportunity to push boundaries and exceed expectations.
+                {t('aboutPage.description3')}
               </p>
             </div>
           </div>
@@ -107,10 +108,10 @@ export default function AboutUsSection() {
         {/* Values Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Our <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Values</span>
+            {t('aboutPage.ourValues')}
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            These core principles guide everything we do and shape how we work with our clients and each other.
+            {t('aboutPage.valuesDescription')}
           </p>
         </div>
 

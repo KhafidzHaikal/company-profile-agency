@@ -1,7 +1,12 @@
+'use client';
+
 import { FaCode, FaCog, FaRobot, FaMobile, FaDatabase, FaCloud } from 'react-icons/fa';
 import Image from 'next/image';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function PortfolioSection() {
+  const { t } = useLanguage();
+  
   const portfolioItems = [
     {
       title: "Web Development",
@@ -59,10 +64,10 @@ export default function PortfolioSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Showcase <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Portfolio</span>
+            {t('portfolio.title')}
           </h2>
           <p className="text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Explore our diverse range of projects showcasing innovation, creativity, and technical excellence across various industries and technologies.
+            {t('portfolio.subtitle')}
           </p>
         </div>
 
@@ -111,7 +116,7 @@ export default function PortfolioSection() {
                       {item.description}
                     </p>
                     <button className="flex items-center space-x-2 text-white hover:text-lime-400 transition-colors duration-300 group">
-                      <span className="text-sm font-medium">View Project</span>
+                      <span className="text-sm font-medium">{t('portfolio.viewProject')}</span>
                       <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
                     </button>
                   </div>
@@ -124,7 +129,7 @@ export default function PortfolioSection() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-            View All Projects
+            {t('portfolio.viewAll')}
           </button>
         </div>
       </div>

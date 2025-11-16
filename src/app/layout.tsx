@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { LanguageProvider } from '@/contexts/LanguageContext';
 
 export const metadata: Metadata = {
-  title: "Creative Agency",
-  description: "Design the future",
+  title: "GOROSEI - Digital Solutions",
+  description: "Comprehensive digital solutions for websites, applications, and platform migration",
 };
 
 export const dynamic = 'force-dynamic';
@@ -22,7 +23,9 @@ export default function RootLayout({
         <meta httpEquiv="Expires" content="0" />
       </head>
       <body className="antialiased">
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

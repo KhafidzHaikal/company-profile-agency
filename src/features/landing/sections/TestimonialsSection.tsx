@@ -4,9 +4,11 @@ import { useState } from 'react';
 import { FaChevronLeft, FaChevronRight, FaStar } from 'react-icons/fa';
 import Image from 'next/image';
 import { testimonials } from '@/data/testimonials';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { t } = useLanguage();
 
 
 
@@ -31,10 +33,7 @@ export default function TestimonialsSection() {
           {/* Left Content */}
           <div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
-              Our true winning intention came from all of our clients honest word of our{' '}
-              <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                services
-              </span>
+              {t('testimonials.title')}
             </h2>
             
             {/* Navigation Buttons */}

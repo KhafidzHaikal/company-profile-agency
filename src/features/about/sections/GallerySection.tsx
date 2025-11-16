@@ -4,9 +4,11 @@ import { useState } from 'react';
 import { FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Image from 'next/image';
 import { galleryImages } from '@/data/gallery';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const { t } = useLanguage();
 
 
 
@@ -28,10 +30,10 @@ export default function GallerySection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Our <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Gallery</span>
+            {t('aboutPage.ourGallery')}
           </h2>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Take a glimpse into our creative workspace, team culture, and the passion that drives our work every day.
+            {t('aboutPage.galleryDescription')}
           </p>
         </div>
 
@@ -76,13 +78,13 @@ export default function GallerySection() {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-2xl p-8 border border-zinc-800">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Work With Us?
+              {t('aboutPage.readyToWork')}
             </h3>
             <p className="text-zinc-300 mb-6 max-w-2xl mx-auto">
-              Let's create something amazing together. Get in touch and let's discuss how we can bring your vision to life.
+              {t('aboutPage.workDescription')}
             </p>
             <button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-              Start Your Project
+              {t('aboutPage.startProject')}
             </button>
           </div>
         </div>

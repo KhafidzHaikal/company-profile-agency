@@ -1,8 +1,13 @@
+'use client';
+
 import { FaCode, FaTools, FaTachometerAlt, FaShieldAlt, FaDatabase, FaPuzzlePiece } from 'react-icons/fa';
 import Link from 'next/link';
 import { services } from '@/data/services';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ServicesSection() {
+  const { t } = useLanguage();
+  
   const iconMap = {
     'website-development': FaCode,
     'regular-maintenance': FaTools,
@@ -18,11 +23,10 @@ export default function ServicesSection() {
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Why <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Artatiga</span>?
+            {t('services.title')}
           </h2>
           <p className="text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            We provide comprehensive web solutions with cutting-edge technology and expert support. 
-            Our integrated approach ensures your website performs optimally while staying secure and up-to-date.
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -126,25 +130,54 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        {/* Bottom Description */}
+        {/* Benefits Section */}
         <div className="text-center mt-16">
           <div className="max-w-4xl mx-auto">
-            <p className="text-zinc-300 text-base md:text-lg leading-relaxed mb-6">
-              Our comprehensive suite of services is designed to handle every aspect of your web presence. 
-              From initial development to ongoing maintenance, we ensure your website remains fast, secure, and fully functional.
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              {t('services.benefits.title')}
+            </h3>
+            <p className="text-zinc-300 text-base md:text-lg leading-relaxed mb-8">
+              {t('services.benefits.description')}
             </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <div className="bg-zinc-800/50 rounded-xl p-6 border border-zinc-700/50">
+                <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="text-white font-bold">⏰</span>
+                </div>
+                <h4 className="text-white font-semibold mb-2">{t('services.benefits.onTime')}</h4>
+                <p className="text-zinc-400 text-sm">{t('services.benefits.onTimeDesc')}</p>
+              </div>
+              
+              <div className="bg-zinc-800/50 rounded-xl p-6 border border-zinc-700/50">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="text-white font-bold">🛡️</span>
+                </div>
+                <h4 className="text-white font-semibold mb-2">{t('services.benefits.security')}</h4>
+                <p className="text-zinc-400 text-sm">{t('services.benefits.securityDesc')}</p>
+              </div>
+              
+              <div className="bg-zinc-800/50 rounded-xl p-6 border border-zinc-700/50">
+                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="text-white font-bold">⚡</span>
+                </div>
+                <h4 className="text-white font-semibold mb-2">{t('services.benefits.scalable')}</h4>
+                <p className="text-zinc-400 text-sm">{t('services.benefits.scalableDesc')}</p>
+              </div>
+            </div>
+            
             <div className="flex flex-wrap justify-center gap-6 text-sm text-zinc-400">
               <span className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                <span>24/7 Support</span>
+                <span>{t('services.benefits.experience')}</span>
               </span>
               <span className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span>99.9% Uptime</span>
+                <span>{t('services.benefits.ux')}</span>
               </span>
               <span className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-lime-400 rounded-full"></div>
-                <span>Expert Team</span>
+                <span>{t('services.benefits.support')}</span>
               </span>
             </div>
           </div>

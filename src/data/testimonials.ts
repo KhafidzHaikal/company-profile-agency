@@ -14,7 +14,7 @@ export const testimonials: Testimonial[] = [
     name: "Sarah Johnson",
     position: "CEO at TechStart",
     company: "TechStart Solutions",
-    review: "Artatiga transformed our digital presence completely. Their team delivered a stunning website that perfectly captures our brand identity and drives real business results.",
+    review: "GOROSEI transformed our digital presence completely. Their team delivered a stunning website that perfectly captures our brand identity and drives real business results.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
   },
@@ -22,7 +22,7 @@ export const testimonials: Testimonial[] = [
     name: "Michael Chen",
     position: "Project Manager",
     company: "Digital Innovations",
-    review: "Working with Artatiga was seamless. They understood our requirements perfectly and delivered beyond expectations. The ongoing maintenance service is exceptional.",
+    review: "Working with GOROSEI was seamless. They understood our requirements perfectly and delivered beyond expectations. The ongoing maintenance service is exceptional.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
   },
@@ -30,7 +30,7 @@ export const testimonials: Testimonial[] = [
     name: "Emily Rodriguez",
     position: "Marketing Director",
     company: "Creative Agency Co",
-    review: "The migration process was flawless and the new website performance is incredible. Artatiga's expertise in web development is truly outstanding.",
+    review: "The migration process was flawless and the new website performance is incredible. GOROSEI's expertise in web development is truly outstanding.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
   },
@@ -38,7 +38,7 @@ export const testimonials: Testimonial[] = [
     name: "David Thompson",
     position: "Founder",
     company: "StartupHub",
-    review: "From concept to launch, Artatiga provided exceptional service. Their attention to detail and technical expertise made our project a huge success.",
+    review: "From concept to launch, GOROSEI provided exceptional service. Their attention to detail and technical expertise made our project a huge success.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
   },
@@ -46,7 +46,7 @@ export const testimonials: Testimonial[] = [
     name: "Lisa Wang",
     position: "CTO",
     company: "InnovateTech",
-    review: "The API integration and automation solutions provided by Artatiga have streamlined our operations significantly. Highly recommended for any tech project.",
+    review: "The API integration and automation solutions provided by GOROSEI have streamlined our operations significantly. Highly recommended for any tech project.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face"
   }
@@ -57,7 +57,7 @@ export const portfolioTestimonials: Testimonial[] = [
     name: "Sarah Johnson",
     position: "CEO",
     company: "TechStart Solutions",
-    review: "Working with Creative Agency was a game-changer for our business. They delivered a website that not only looks stunning but also increased our conversion rate by 150%. The team's attention to detail and technical expertise is unmatched.",
+    review: "Working with GOROSEI was a game-changer for our business. They delivered a website that not only looks stunning but also increased our conversion rate by 150%. The team's attention to detail and technical expertise is unmatched.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
     projectValue: "$50K",

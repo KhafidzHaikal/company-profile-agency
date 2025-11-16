@@ -4,56 +4,90 @@ import { FaCode, FaTools, FaTachometerAlt, FaShieldAlt, FaDatabase, FaPuzzlePiec
 import Link from 'next/link';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import { useLanguage } from '@/contexts/LanguageContext';
+import ScrollToTop from '@/components/ui/ScrollToTop';
 
 export default function ServicesPage() {
+  const { t } = useLanguage();
+  
   const services = [
     {
       id: 'website-development',
-      title: "Website Development",
-      description: "Custom websites built with modern technology",
+      title: t('servicesPage.services.development.title'),
+      description: t('servicesPage.services.development.description'),
       icon: FaCode,
-      fullDescription: "We create stunning, responsive websites using the latest technologies like React, Next.js, and modern CSS frameworks.",
-      features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Modern UI/UX"]
+      fullDescription: t('servicesPage.services.development.fullDescription'),
+      features: [
+        t('servicesPage.services.development.features.0'),
+        t('servicesPage.services.development.features.1'),
+        t('servicesPage.services.development.features.2'),
+        t('servicesPage.services.development.features.3')
+      ]
     },
     {
       id: 'regular-maintenance',
-      title: "Regular Maintenance", 
-      description: "Keep your site updated and running smoothly",
+      title: t('servicesPage.services.maintenance.title'),
+      description: t('servicesPage.services.maintenance.description'),
       icon: FaTools,
-      fullDescription: "Our maintenance service ensures your website stays updated, secure, and performs optimally at all times.",
-      features: ["Regular Updates", "Bug Fixes", "Performance Monitoring", "Content Updates"]
+      fullDescription: t('servicesPage.services.maintenance.fullDescription'),
+      features: [
+        t('servicesPage.services.maintenance.features.0'),
+        t('servicesPage.services.maintenance.features.1'),
+        t('servicesPage.services.maintenance.features.2'),
+        t('servicesPage.services.maintenance.features.3')
+      ]
     },
     {
       id: 'speed-optimization',
-      title: "Speed Optimization",
-      description: "Fast loading times for better user experience",
+      title: t('servicesPage.services.optimization.title'),
+      description: t('servicesPage.services.optimization.description'),
       icon: FaTachometerAlt,
-      fullDescription: "We optimize your website's performance to achieve lightning-fast loading speeds and better user engagement.",
-      features: ["Image Optimization", "Code Minification", "CDN Setup", "Caching Solutions"]
+      fullDescription: t('servicesPage.services.optimization.fullDescription'),
+      features: [
+        t('servicesPage.services.optimization.features.0'),
+        t('servicesPage.services.optimization.features.1'),
+        t('servicesPage.services.optimization.features.2'),
+        t('servicesPage.services.optimization.features.3')
+      ]
     },
     {
       id: 'website-security',
-      title: "Website Security",
-      description: "Protect your site from threats and attacks",
+      title: t('servicesPage.services.security.title'),
+      description: t('servicesPage.services.security.description'),
       icon: FaShieldAlt,
-      fullDescription: "Comprehensive security solutions to protect your website from malware, hackers, and other online threats.",
-      features: ["SSL Certificates", "Malware Scanning", "Firewall Protection", "Security Monitoring"]
+      fullDescription: t('servicesPage.services.security.fullDescription'),
+      features: [
+        t('servicesPage.services.security.features.0'),
+        t('servicesPage.services.security.features.1'),
+        t('servicesPage.services.security.features.2'),
+        t('servicesPage.services.security.features.3')
+      ]
     },
     {
       id: 'automatic-backup',
-      title: "Automatic Backup",
-      description: "Daily backups to keep your data safe",
+      title: t('servicesPage.services.backup.title'),
+      description: t('servicesPage.services.backup.description'),
       icon: FaDatabase,
-      fullDescription: "Automated backup solutions ensure your website data is always safe and can be restored quickly when needed.",
-      features: ["Daily Backups", "Cloud Storage", "One-Click Restore", "Version Control"]
+      fullDescription: t('servicesPage.services.backup.fullDescription'),
+      features: [
+        t('servicesPage.services.backup.features.0'),
+        t('servicesPage.services.backup.features.1'),
+        t('servicesPage.services.backup.features.2'),
+        t('servicesPage.services.backup.features.3')
+      ]
     },
     {
       id: 'plugin-integration',
-      title: "Plugin Integration",
-      description: "Seamless integration with essential tools",
+      title: t('servicesPage.services.integration.title'),
+      description: t('servicesPage.services.integration.description'),
       icon: FaPuzzlePiece,
-      fullDescription: "We integrate essential plugins and third-party services to enhance your website's functionality and user experience.",
-      features: ["API Integration", "Payment Gateways", "Analytics Setup", "Custom Plugins"]
+      fullDescription: t('servicesPage.services.integration.fullDescription'),
+      features: [
+        t('servicesPage.services.integration.features.0'),
+        t('servicesPage.services.integration.features.1'),
+        t('servicesPage.services.integration.features.2'),
+        t('servicesPage.services.integration.features.3')
+      ]
     }
   ];
 
@@ -65,10 +99,10 @@ export default function ServicesPage() {
       <section className="py-20 bg-gradient-to-br from-purple-900/20 to-cyan-900/20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Our <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Services</span>
+            {t('servicesPage.title')}
           </h1>
           <p className="text-xl text-zinc-300 max-w-3xl mx-auto">
-            Comprehensive web solutions designed to elevate your digital presence and drive business growth
+            {t('servicesPage.subtitle')}
           </p>
         </div>
       </section>
@@ -104,9 +138,9 @@ export default function ServicesPage() {
                   
                   <Link 
                     href={`/services/${service.id}`}
-                    className="inline-flex items-center bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                    className="inline-flex items-center bg-linear-to-r from-purple-500 to-cyan-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                   >
-                    Learn More
+                    {t('servicesPage.learnMore')}
                     <span className="ml-2">→</span>
                   </Link>
                 </div>
@@ -115,6 +149,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+      <ScrollToTop />
       </div>
       <Footer />
     </>
